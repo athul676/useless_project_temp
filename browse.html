@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse - NETWEIRD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="browse-page">
+        <header class="browse-header">
+            <div class="header-left">
+                <h1 class="logo">NETWEIRD</h1>
+                <nav>
+                    <a href="#" class="nav-link active" data-category="all">Home</a>
+                    <a href="#" class="nav-link" data-category="action">Action</a>
+                    <a href="#" class="nav-link" data-category="horror">Horror & Mystery</a>
+                    <a href="#" class="nav-link" data-category="drama">Drama & Romance</a>
+                    <a href="#" class="nav-link" data-category="new">New & Popular</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="free-membership-icon" onclick="showVideoPopup()">
+                    <span>Free Membership</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Slideshow Container -->
+            <div class="hero-container">
+                <!-- Hero Slide 1 -->
+                <section class="hero-slide active" style="background-image: url('panel.jpg');">
+                    <div class="hero-content">
+                        <h2>Beeshma</h2>
+                        <p>An epic tale of a family dynasty where every dinner is a potential power play and every secret has a sequel.</p>
+                        <button class="btn btn-red" onclick="showStory('action2')">▶ Play</button>
+                        <button class="btn btn-secondary" onclick="showStory('action2')">More Info</button>
+                    </div>
+                </section>
+                <!-- Hero Slide 2 -->
+                <section class="hero-slide" style="background-image: url('club.jpg');">
+                    <div class="hero-content">
+                        <h2>The Fight Club</h2>
+                        <p>An underground society where the first rule is you don't talk about it. The second rule is... you know the rest.</p>
+                        <button class="btn btn-red" onclick="showStory('action4')">▶ Play</button>
+                        <button class="btn btn-secondary" onclick="showStory('action4')">More Info</button>
+                    </div>
+                </section>
+                <!-- Hero Slide 3 -->
+                <section class="hero-slide" style="background-image: url('green.jpg');">
+                    <div class="hero-content">
+                        <h2>The Green Mile</h2>
+                        <p>A gentle giant on death row possesses a miraculous gift, turning a prison guard's life upside down in this tale of compassion and consequence.</p>
+                        <button class="btn btn-red" onclick="showStory('drama4')">▶ Play</button>
+                        <button class="btn btn-secondary" onclick="showStory('drama4')">More Info</button>
+                    </div>
+                </section>
+                <!-- Hero Slide 4 -->
+                <section class="hero-slide" style="background-image: url('shawshank.jpg');">
+                    <div class="hero-content">
+                        <h2>The Shawshank Redemption</h2>
+                        <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency. Hope is a good thing.</p>
+                        <button class="btn btn-red" onclick="showStory('drama5')">▶ Play</button>
+                        <button class="btn btn-secondary" onclick="showStory('drama5')">More Info</button>
+                    </div>
+                </section>
+                <!-- Hero Slide 5 -->
+                <section class="hero-slide" style="background-image: url('shutter.jpg');">
+                    <div class="hero-content">
+                        <h2>Shutter Island</h2>
+                        <p>A U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane. But nothing on the island is what it seems.</p>
+                        <button class="btn btn-red" onclick="showStory('horror6')">▶ Play</button>
+                        <button class="btn btn-secondary" onclick="showStory('horror6')">More Info</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Movie Carousels -->
+            <section class="movie-carousel" data-category="action">
+                <h2>Malayalam Action</h2>
+                <div class="carousel-content">
+                    <div class="movie" onclick="showStory('action1')">
+                        <img src="bigB.jpg" alt="Big B">
+                    </div>
+                    <div class="movie" onclick="showStory('action2')">
+                        <img src="parvam.jpg" alt="Beeshma Parvam">
+                    </div>
+                    <div class="movie" onclick="showStory('action3')">
+                        <img src="velyettan.jpg" alt="Velyettan">
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-carousel" data-category="horror">
+                <h2>Horror & Mystery</h2>
+                <div class="carousel-content">
+                    <div class="movie" onclick="showStory('horror1')">
+                        <img src="a%20classic%20horror%20story.jpg" alt="A Classic Horror Story">
+                    </div>
+                    <div class="movie" onclick="showStory('horror2')">
+                        <img src="curtains.jpg" alt="Curtains">
+                    </div>
+                    <div class="movie" onclick="showStory('horror3')">
+                        <img src="hidden.jpg" alt="Hidden">
+                    </div>
+                    <div class="movie" onclick="showStory('horror4')">
+                        <img src="noseferatu.jpg" alt="Noseferatu">
+                    </div>
+                    <div class="movie" onclick="showStory('horror5')">
+                        <img src="mirror.jp.jpg" alt="Mirror">
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-carousel" data-category="drama">
+                <h2>Malayalam Drama & Romance</h2>
+                <div class="carousel-content">
+                    <div class="movie" onclick="showStory('romance1')">
+                        <img src="96.jpg" alt="96">
+                    </div>
+                    <div class="movie" onclick="showStory('romance2')">
+                        <img src="mathilukal.jpg" alt="Mathilukal">
+                    </div>
+                    <div class="movie" onclick="showStory('romance3')">
+                        <img src="thatathin%20marayath.jpg" alt="Thattathin Marayathu">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div id="story-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 id="story-title"></h2>
+                <p id="story-text"></p>
+            </div>
+        </div>
+
+        <div id="video-popup" class="popup">
+            <div class="popup-content video-popup-content">
+                <span class="close" onclick="closeVideoPopup()">&times;</span>
+                <video id="rick-video" width="100%" controls>
+                    <source src="rick.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

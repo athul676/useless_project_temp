@@ -1,34 +1,34 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# [NETWIERD] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [T]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
+- Team Lead: [Athul ks] - [SNMIMT MALIAKARA]
+- Member 2: [Adithya krishna ps] - [SNMIMT MALIAKARA]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Movies streaming platform without the movies]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[people rarely reads the movie descriptions.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[we make users read the short descriptions of movies sice there is nothing else]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [html,css,javascript]
+- [none]
+- [none]]
+- [gemni]
 
 For Hardware:
 - [List main components]
@@ -47,13 +47,15 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![interface] (https://drive.google.com/file/d/1c2pavEwOiYu211AP3vwsNcj0VfRpqcgh/view?usp=drive_link)
+
+![home] (https://drive.google.com/file/d/1c2pavEwOiYu211AP3vwsNcj0VfRpqcgh/view?usp=drive_link)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![how it rus] (https://drive.google.com/file/d/1zvYv2AO_Jp00owN-aJHc1bvXjiX6cFes/view?usp=drive_link)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![library] (https://drive.google.com/file/d/1oyj_lD7d_4aZBrFjRai-7VPJyjPWp0IY/view?usp=drive_link)
 *Add caption explaining what this shows*
 
 # Diagrams
@@ -81,7 +83,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[DEMO] (https://drive.google.com/file/d/1PPM0UsvJ4gWJ_LsPCM-M0ZUc-UgEXOt6/view?usp=drive_link)
 *Explain what the video demonstrates*
 
 # Additional Demos

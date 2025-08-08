@@ -1,0 +1,343 @@
+/* --- General & Reusable Styles --- */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: #fff;
+    overflow-x: hidden; /* Prevents horizontal scrollbar on body */
+}
+
+.logo {
+    color: #e50914;
+    font-family: 'Bebas Neue', sans-serif; /* Netflix-like font */
+    font-weight: 400; /* Bebas Neue is already bold */
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0;
+    letter-spacing: 2px; /* Adjust for authentic look */
+}
+
+.btn {
+    padding: 8px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-red {
+    background-color: #e50914;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #f40612;
+}
+
+.btn-large {
+    padding: 15px 32px;
+    font-size: 1.5rem;
+}
+
+.btn-secondary {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+/* --- Landing Page (index.html) Styles --- */
+.landing-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('landing-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.landing-header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.landing-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.landing-main h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    max-width: 640px;
+}
+
+.landing-main .subheading {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email-form input {
+    min-width: 450px;
+    height: 60px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px 0 0 2px;
+}
+
+.email-form button {
+    border-radius: 0 2px 2px 0;
+    border: none;
+}
+
+.guest-signin {
+    margin-top: 20px;
+}
+
+.guest-signin a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.guest-signin a:hover {
+    text-decoration: underline;
+}
+
+/* --- Browse Page (browse.html) Styles --- */
+.browse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 68px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0));
+    position: fixed;
+    top: 0;
+    width: calc(100% - 120px); /* 100% - padding */
+    z-index: 10;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.free-membership-icon {
+    cursor: pointer;
+    background-color: #e50914;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.free-membership-icon:hover {
+    background-color: #f40612;
+}
+.browse-header .logo {
+    font-size: 1.8rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-left nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: 600;
+}
+
+.header-left nav a:hover, .header-left nav a.active {
+    color: #b3b3b3;
+}
+
+.hero-container {
+    position: relative;
+    height: 56.25vw; /* 16:9 Aspect Ratio */
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    z-index: 1; /* Lower z-index for non-active slides */
+}
+
+.hero-slide.active {
+    opacity: 1; /* Make the active slide visible */
+    z-index: 2; /* Bring active slide to the front */
+}
+.hero-content {
+    max-width: 36%;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.movie-carousel {
+    padding: 20px 60px;
+}
+
+.movie-carousel h2 {
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.carousel-content {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden;
+    padding-bottom: 15px; /* Space for scrollbar */
+}
+
+/* Hide scrollbar but keep functionality */
+.carousel-content::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.movie {
+    min-width: 250px; /* Set a minimum width for carousel items */
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* --- Popup Styles (Shared) --- */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    z-index: 999;
+}
+
+.popup-content {
+    background: #181818;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.popup.show .popup-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.popup-content {
+    margin-top: 5vh; /* Push it down from the top a bit */
+}
+
+.video-popup-content {
+    background: #000;
+    padding: 10px;
+    max-width: 80vw;
+}
+#rick-video {
+    max-height: 80vh;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+#story-title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #e50914;
+}
+
+#story-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
